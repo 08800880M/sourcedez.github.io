@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3d3d3d;
+}
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+
+.news-container {
+    position: relative;
+}
+
+.news-toggle {
+    display: none; / Скрываем чекбокс /
+}
+
+.news-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.news-toggle {
+    display: none; /* Скрываем чекбокс */
+}
+
+.news-button {
+    display: block;
+   / width: 100px;
+   / height: 100px;
+    background-color: #2d2d3d;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* Центрируем текст по вертикали */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.news-button:hover {
+    background-color: #555;
+}
+
+.news-details {
+    display: none; /* Скрываем подробности по умолчанию */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4d4d4d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.news-toggle:checked + .news-button + .news-details {
+    display: block; /* Показываем подробности, когда чекбокс отмечен */
+}
