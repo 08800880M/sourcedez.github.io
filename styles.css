@@ -9,50 +9,45 @@ p {
   color: white;
 }
 
-.news-container {
-    position: relative;
-}
+        .news-tile {
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            background-color: #2d2d2d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            flex: 0 0 300px; /* Плитки будут шириной 300px */
+            transition: transform 0.3s ease;
+            color: white;
+        }
 
-.news-toggle {
-    display: none; / Скрываем чекбокс /
-}
+        .news-tile:hover {
+            transform: translateY(-5px); /* Эффект поднятия плитки при наведении */
+        }
 
-.news-container {
-    position: relative;
-    margin: 10px 0;
-}
+        .news-title {
+            padding: 10px;
+            text-align: center;
+            background-color: #2d2d2d;
+            border-bottom: 1px solid #ccc;
+            color: white;
+        }
 
-.news-toggle {
-    display: none; /* Скрываем чекбокс */
-}
+        .news-image {
+            width: 400;
+            height: 500;
+            object-fit: cover;
+        }
 
-.news-button {
-    display: block;
-   / width: 100px;
-   / height: 100px;
-    background-color: #2d2d3d;
-    color: white;
-    text-align: center;
-    line-height: 100px; /* Центрируем текст по вертикали */
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-}
+        .news-details {
+            display: none; /* Изначально детали скрыты */
+            padding: 10px;
+            background-color: #2d2d2d;
+            color: white;
 
-.news-button:hover {
-    background-color: #555;
-}
+        }
 
-.news-details {
-    display: none; /* Скрываем подробности по умолчанию */
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #4d4d4d;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.news-toggle:checked + .news-button + .news-details {
-    display: block; /* Показываем подробности, когда чекбокс отмечен */
-}
+        .details-visible {
+            display: block; /* Показать детали при добавлении класса */
+        }
