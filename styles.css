@@ -9,45 +9,44 @@ p {
   color: white;
 }
 
-        .news-tile {
-            margin: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            background-color: #2d2d2d;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            cursor: pointer;
-            flex: 0 0 300px; /* Плитки будут шириной 300px */
-            transition: transform 0.3s ease;
-            color: white;
-        }
+.news-tile {
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  flex: 0 0 300px; /* Плитки будут шириной 300px */
+  transition: transform 0.3s ease;
+  color: white;
+}
 
-        .news-tile:hover {
-            transform: translateY(-5px); /* Эффект поднятия плитки при наведении */
-        }
+.news-tile:hover {
+  transform: translateY(-5px); /* Эффект поднятия плитки при наведении */
+}
 
-        .news-title {
-            padding: 10px;
-            text-align: center;
-            background-color: #2d2d2d;
-            border-bottom: 1px solid #ccc;
-            color: white;
-        }
+.news-title {
+  padding: 10px;
+  text-align: center;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #ccc;
+  color: white;
+}
 
-        .news-image {
-            width: 400;
-            height: 500;
-            object-fit: cover;
-        }
+.news-image {
+  width: 400;
+  height: 500;
+  object-fit: cover;
+}
 
-        .news-details {
-            display: none; /* Изначально детали скрыты */
-            padding: 10px;
-            background-color: #2d2d2d;
-            color: white;
+.news-details {
+  display: none; /* Изначально детали скрыты */
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: white;
+}
 
-        }
-
-        .details-visible {
-            display: block; /* Показать детали при добавлении класса */
-        }
+.details-visible {
+  display: block; /* Показать детали при добавлении класса */
+}
