@@ -9,6 +9,17 @@ p {
   color: white;
 }
 
+header {
+  background-color: #2d2d2d; /* Цвет фона шапки */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Отступы */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+header h1 {
+  margin: 0; /* Убираем отступы у заголовка */
+}
+
 .news-tile {
   margin: 10px;
   border-radius: 10px;
@@ -49,4 +60,32 @@ p {
 
 .details-visible {
   display: block; /* Показать детали при добавлении класса */
+}
+
+.profile-inflabel {
+  width: 200px; /* Ширина кнопки */
+  height: 200px; /* Высота кнопки */
+  border-radius: 20px; /* Закругление углов */
+  overflow: hidden; /* Скрытие переполнения */
+  border: 1px solid #ccc; /* Граница кнопки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  text-align: center; /* Центрирование текста */
+  font-family: Arial, sans-serif; /* Шрифт */
+  transition: transform 0.2s; /* Плавный эффект при наведении */
+}
+
+.profile-inflabel:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.profile-inftext {
+  padding: 10px; /* Отступы текста */
+  font-size: 16px; /* Размер шрифта */
+  color: white; /* Цвет текста */
+}
+
+.profile-image {
+  width: 100%; /* Ширина изображения */
+  height: 150px; /* Высота изображения */
+  object-fit: cover; /* Обтяжка изображения */
 }
