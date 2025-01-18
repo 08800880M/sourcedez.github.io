@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Dezeroller</title>
+  <link rel="icon" type="image/x-icon" href="WebsiteLogo.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>Черный/Красный список Dezeroller</h1>
+    <div class="nav-buttons" style="margin: 10px;">
+        <button onclick="location.href='index.html'">Главная</button>
+        <button onclick="location.href='members.html'">Список участников</button>
+        <button onclick="location.href='blacklists.html'">Чёрный/красный список</button>
+    </div>
+</header>
+
+<hr>
+
+        <div class="news-tile" onclick="toggleDetails(this)">
+        <h3 class="news-title">Код дела JGA55</h3>
+        <h4 style="color: red; text-align: center;">КРАСНЫЙ СПИСОК</h4>
+        <div class="news-details">
+        <div style="display: flex; grid-gap: 20px;">
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-A4A32D790437083AA7283BE90F1AD418-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">LehaTop273_IsFun2</div>
+        </div>
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-475A05636F5D53703E8EB4CA24553174-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">NINJAPSDED</div>
+        </div>
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-66685A1910B8837F02C751FB856AFFBD-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">Ttubers67</div>
+        </div>
+        </div>
+            <p>Основные персоны дела : LehaTop273_IsFun2</p>
+            <p>Причина : Попытка рейда, Предательство сообщества, Вступление в ряды изгоев.</p>
+            <p>Дата записи в список : 19.06.2024</p>
+            <p>Возможность обжалования : нет</p>
+        </div>
+    </div>
+
+        <div class="news-tile" onclick="toggleDetails(this)">
+        <h3 class="news-title">Код дела YTW10</h3>
+        <h4 style="color: gray; text-align: center;">ЧЁРНЫЙ СПИСОК</h4>
+        <div class="news-details">
+        <div style="display: flex; grid-gap: 20px;">
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-56E226AF70C6D8D49EF6A211655E7CD4-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">mewrience</div>
+        </div>
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-E5246855F87AA4A745902214BDD0CCAD-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">iriqwix</div>
+        </div>
+        </div>
+            <p>Основные персоны дела : mewrience</p>
+            <p>Причина : Предательство сообщества, Вступление в ряды изгоев.</p>
+            <p>Дата записи в список : N/A</p>
+            <p>Возможность обжалования : есть</p>
+        </div>
+    </div>
+
+        <div class="news-tile" onclick="toggleDetails(this)">
+        <h3 class="news-title">Код дела JGB55</h3>
+        <h4 style="color: gray; text-align: center;">ЧЁРНЫЙ СПИСОК</h4>
+        <div class="news-details">
+        <div style="display: flex; grid-gap: 20px;">
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-333AAC59EF11F4BBFDB226A85AB95473-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">Timonchik06</div>
+        </div>
+          <div class="profile-inflabel">
+          <img src="https://tr.rbxcdn.com/30DAY-Avatar-2E84633B243E9322FDD25D51D9526520-Png/352/352/Avatar/Webp/noFilter" class="profile-image">
+          <div class="profile-inftext">jd_animationfr</div>
+        </div>
+        </div>
+            <p>Основные персоны дела : Timonchik06</p>
+            <p>Причина : Вступление в ряды изгоев.</p>
+            <p>Дата записи в список : 19.06.2024</p>
+            <p>Возможность обжалования : есть</p>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleDetails(tile) {
+            const details = tile.querySelector('.news-details');
+            details.classList.toggle('details-visible');
+        }
+    </script>
+
+</body>
+</html>
