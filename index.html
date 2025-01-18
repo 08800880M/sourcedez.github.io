@@ -2,14 +2,20 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-  <title>Dezeroller</title>
-  <link rel="icon" type="image/x-icon" href="WebsiteLogo.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<h1 style="text-align: center;">ЭКСПЕРИМЕНТАЛЬНЫЙ новостной сайт сообщества Dezeroller</h1>
+<header>
+    <h1>ЭКСПЕРИМЕНТАЛЬНЫЙ новостной сайт сообщества Dezeroller</h1>
+    <div class="nav-buttons" style="margin: 10px;">
+        <button onclick="location.href='index.html'">Главная</button>
+        <button onclick="location.href='members.html'">Список участников</button>
+        <button">Чёрный/красный список</button>
+    </div>
+</header>
+
 <hr>
 
         <div class="news-tile" onclick="toggleDetails(this)">
@@ -19,10 +25,10 @@
             <p>Вход в Dezeroller через Discord сервер сообщества будет временно невозможен с 18.01.25 - 2:30 по 18.01.25 - 12:00</p>
         </div>
     </div>
-  
+
         <div class="news-tile" onclick="toggleDetails(this)">
         <h3 class="news-title">Самый активный участник Dezeroller за 2024 год</h3>
-        <div style="text-align: center;">Информация Dezeroller - 15.01.2025</div>
+        <div style="text-align: center;">Информация - 17.01.2025</div>
         <div class="news-details">
         <img class="news-image" src="omg.png">
             <p>На этой довольно простой диаграмме выполнено отображение очков активности, это визуализация внешней статистики вашей активности.
@@ -32,12 +38,14 @@
         </div>
     </div>
 
+
     <script>
         function toggleDetails(tile) {
             const details = tile.querySelector('.news-details');
             details.classList.toggle('details-visible');
         }
     </script>
+
 
 </body>
 </html>
