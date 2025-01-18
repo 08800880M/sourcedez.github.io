@@ -89,3 +89,23 @@ header h1 {
   height: 150px; /* Высота изображения */
   object-fit: cover; /* Обтяжка изображения */
 }
+
+        .nav-buttons {
+            margin-top: 10px; / Отступ сверху для кнопок /
+        }
+
+        .nav-buttons button {
+            background-color: white; / Цвет фона кнопок /
+            color: #4CAF50; / Цвет текста кнопок /
+            border: none; / Убираем рамку /
+            padding: 10px 20px; / Отступы внутри кнопок /
+            margin: 0 5px; / Отступы между кнопками /
+            cursor: pointer; / Курсор при наведении /
+            border-radius: 5px; / Закругленные углы /
+            transition: background-color 0.3s; / Плавный переход цвета фона /
+        }
+
+        .nav-buttons button:hover {
+            background-color: #45a049; / Цвет фона кнопок при наведении /
+            color: white; / Цвет текста кнопок при наведении /
+        }
