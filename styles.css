@@ -9,6 +9,17 @@ p {
   color: white;
 }
 
+header {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
 .news-tile {
   margin: 10px;
   border-radius: 10px;
@@ -35,8 +46,8 @@ p {
 }
 
 .news-image {
-  width: 400;
-  height: 500;
+  width: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
