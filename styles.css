@@ -62,7 +62,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    max-height: 500vh;
+    max-width: 500vh;
 }
 
 .details-visible {
@@ -70,8 +71,8 @@ header h1 {
 }
 
 .profile-inflabel {
-  width: 200px; /* Ширина кнопки */
-  height: 200px; /* Высота кнопки */
+  max-width: 200px; /* Ширина кнопки */
+  max-height: 200px; /* Высота кнопки */
   border-radius: 20px; /* Закругление углов */
   overflow: hidden; /* Скрытие переполнения */
   border: 1px solid #ccc; /* Граница кнопки */
@@ -92,7 +93,7 @@ header h1 {
 }
 
 .profile-image {
-  width: 100%; /* Ширина изображения */
-  height: 150px; /* Высота изображения */
+  max-height: 150px; /* Ширина изображения */
+  max-width: 150px; /* Высота изображения */
   object-fit: cover; /* Обтяжка изображения */
 }
