@@ -9,18 +9,20 @@
 </head>
 <body>
 
-<header>
-    <h1>ЭКСПЕРИМЕНТАЛЬНЫЙ новостной сайт сообщества Dezeroller</h1>
-    <div class="nav-buttons" style="margin: 10px;">
-        <button onclick="location.href='index.html'">Главная</button>
-        <button onclick="location.href='members.html'">Список участников</button>
-        <button onclick="location.href='blacklists.html'">Чёрный/красный список</button>
-    </div>
-</header>
+    <header>
+        <h1>ЭКСПЕРИМЕНТАЛЬНЫЙ новостной сайт сообщества Dezeroller V0.6</h1>
+        <div class="nav-buttons" style="margin: 10px;">
+            <button onclick="location.href='index'">Главная</button>
+            <button onclick="location.href='members'">Список участников</button>
+            <button onclick="location.href='blacklists'">Чёрный/красный список</button>
+        </div>
+    </header>
 
-<hr>
+    <hr>
 
-        <div class="news-tile" onclick="toggleDetails(this)">
+<div class="tile-container">
+
+    <div class="news-tile" onclick="toggleDetails(this)">
         <h3 class="news-title">Внимания - изменения</h3>
         <div style="text-align: center;">Информация Dezeroller - 18.01.2025</div>
         <div class="news-details">
@@ -28,18 +30,21 @@
         </div>
     </div>
 
-        <div class="news-tile" onclick="toggleDetails(this)">
+    <div class="news-tile" onclick="toggleDetails(this)">
         <h3 class="news-title">Самый активный участник Dezeroller за 2024 год</h3>
         <div style="text-align: center;">Информация - 17.01.2025</div>
         <div class="news-details">
-        <img class="news-image" src="omg.png">
-            <p>На этой довольно простой диаграмме выполнено отображение очков активности, это визуализация внешней статистики вашей активности.
-Максимум очков активности - 50 очков
-На этой диаграмме вы можете увидеть победителя данного события.
-В Dezeroller Hub будет выведена диаграмма в текстовом виде.</p>
+            <img class="news-image" src="omg.png">
+            <p>
+                На этой довольно простой диаграмме выполнено отображение очков активности, это визуализация внешней статистики вашей активности.
+                Максимум очков активности - 50 очков
+                На этой диаграмме вы можете увидеть победителя данного события.
+                В Dezeroller Hub будет выведена диаграмма в текстовом виде.
+            </p>
         </div>
     </div>
 
+</div>
 
     <script>
         function toggleDetails(tile) {
