@@ -97,3 +97,12 @@ header h1 {
   max-width: 150px; /* Высота изображения */
   object-fit: cover; /* Обтяжка изображения */
 }
+
+.profile-container {
+    display: flex; 
+    grid-gap: 20px; 
+    align-items: center; 
+    justify-content: center;
+    margin: 15px;
+}
+
