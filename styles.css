@@ -106,3 +106,23 @@ header h1 {
     margin: 15px;
 }
 
+button {
+    background-color: #1e1e1e; /* Цвет кнопки */
+    color: #ffffff; /* Цвет текста */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+    margin: 7px;
+}
+
+button:hover {
+    background-color: #3a3a3a; /* Цвет кнопки при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+button:active {
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
