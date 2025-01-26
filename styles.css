@@ -33,7 +33,7 @@ button:active {
 header {
     background-color: #2d2d2d;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align: center;
 }
 
@@ -126,3 +126,39 @@ header h1 {
     justify-content: center;
     margin: 15px;
 }
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    color: white;
+}
+
+    .tab:hover {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .tab.active {
+        background: #4d4d4d;
+    }
+
+.content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #4d4d4d;
+    display: none;
+    / Скрываем контент по умолчанию /
+}
+
+    .content.active {
+        display: block;
+        / Показываем активный контент /
+    }
