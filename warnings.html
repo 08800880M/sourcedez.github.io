@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Dezeroller</title>
+    <link rel="icon" type="image/x-icon" href="WebsiteLogo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2 maximum-scale=5.0, user-scalable=yes">
+</head>
+<body>
+
+    <header>
+        <hr>
+        <h1>Страница Dezeroller Community информации</h1>
+        <div class="nav-buttons" style="margin: 10px;">
+            <button onclick="location.href='index'">Главная</button>
+            <button onclick="location.href='members">Список участников</button>
+            <button onclick="location.href='blacklists'">Чёрный/красный список</button>
+            <button>Дисциплинарные отсчёты</button>
+        </div>
+        <h1>🟩🟩🟩 🟩🟨🟩 🟩🟩🟩</h1>
+        <h1>🟩🟩 🟩🟨🟩 🟩🟩</h1>
+        <h1>🟩🟨🟩</h1>
+        <hr>
+    </header>
+
+    <div class="tabs">
+        <div class="tab">The_Mimic</div>
+        <div class="tab active" onclick="showContent('tab1')">Обжалование #1</div>
+        <div class="tab" onclick="showContent('tab2')">Обвинение #1</div>
+        <div class="tab" onclick="showContent('tab3')">Обжалование #2</div>
+    </div>
+
+    <div id="tab1" class="content active">
+        <h2 style="color: white">Содержимое вкладки 1</h2>
+        <p>Это текст для первой вкладки.</p>
+    </div>
+
+    <div id="tab2" class="content">
+        <h2 style="color: white">Содержимое вкладки 2</h2>
+        <p>Это текст для второй вкладки.</p>
+    </div>
+
+    <div id="tab3" class="content">
+        <h2 style="color: white">Содержимое вкладки 3</h2>
+        <p>Это текст для третьей вкладки.</p>
+    </div>
+
+    <script>
+        function showContent(tabId) {
+            const contents = document.querySelectorAll('.content');
+            const tabs = document.querySelectorAll('.tab');
+
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            const activeTab = Array.from(tabs).find(tab => tab.textContent.trim() === tabId.replace('tab', 'Вкладка '));
+            activeTab.classList.add('active');
+        }
+    </script>
+
+
+</body>
+</html>
