@@ -14,9 +14,10 @@
         <h1>Страница Dezeroller Community информации</h1>
         <div class="nav-buttons" style="margin: 10px;">
             <button onclick="location.href='index'">Главная</button>
-            <button onclick="location.href='members'">Список участников</button>
+            <button>Список участников [WIP]</button>
             <button onclick="location.href='blacklists'">Чёрный/красный список</button>
-            <button>Дисциплинарные отсчёты</button>
+            <button onclick="location.href='statistics'">Статистика</button>
+            <button>Дисциплинарные отсчёты [WIP]</button>
         </div>
         <h1>🟩🟩🟩 🟩🟨🟩 🟩🟩🟩</h1>
         <h1>🟩🟩 🟩🟨🟩 🟩🟩</h1>
@@ -25,23 +26,45 @@
     </header>
 
     <div class="tabs">
-        <div class="tab">The_Mimic</div>
-        <div class="tab active" onclick="showContent('tab1')">Обжалование #1</div>
-        <div class="tab" onclick="showContent('tab2')">Обвинение #1</div>
-        <div class="tab" onclick="showContent('tab3')">Обжалование #2</div>
+        <div class="tab">Hellower</div>
+        <div class="tab active" onclick="showContent('tab1_a')">Обжалование #1</div>
+        <div class="tab" onclick="showContent('tab2_a')">Обвинение #1</div>
+        <div class="tab" onclick="showContent('tab3_a')">Обжалование #2</div>
     </div>
 
-    <div id="tab1" class="content active">
+    <div id="tab1_a" class="content active">
         <h2 style="color: white">Содержимое вкладки 1</h2>
         <p>Это текст для первой вкладки.</p>
     </div>
 
-    <div id="tab2" class="content">
+    <div id="tab2_a" class="content">
         <h2 style="color: white">Содержимое вкладки 2</h2>
         <p>Это текст для второй вкладки.</p>
     </div>
 
-    <div id="tab3" class="content">
+    <div id="tab3_a" class="content">
+        <h2 style="color: white">Содержимое вкладки 3</h2>
+        <p>Это текст для третьей вкладки.</p>
+    </div>
+
+    <div class="tabs">
+        <div class="tab">0880</div>
+        <div class="tab active" onclick="showContent('tab1_b')">Обвинение #1</div>
+        <div class="tab" onclick="showContent('tab2_b')">Договор #1</div>
+        <div class="tab" onclick="showContent('tab3_b')">Обжалование #1</div>
+    </div>
+
+    <div id="tab1_b" class="content active">
+        <h2 style="color: white">Обвинение 06.04.2025</h2>
+        <p>Субъект обвиняется</p>
+    </div>
+
+    <div id="tab2_b" class="content">
+        <h2 style="color: white">Содержимое вкладки 2</h2>
+        <p>Это текст для второй вкладки.</p>
+    </div>
+
+    <div id="tab3_b" class="content">
         <h2 style="color: white">Содержимое вкладки 3</h2>
         <p>Это текст для третьей вкладки.</p>
     </div>
